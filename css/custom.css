@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.movie-img {
+    max-width: 25%;
+}
+
+.custom-title {
+    color: #FF5733;
+}
+
+.custom-text {
+    color: #333;
+}
+
+.movie-card:hover {
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.hover-zoom:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
