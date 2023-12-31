@@ -51,6 +51,10 @@ class MovieApiClient
                 throw new Exception('JSON decoding error');
             }
 
+            if ($data['status_code'] === ERROR_STATUS_CODE) {
+                throw new Exception($data['status_message']);
+            }
+
             return $data['results'] ?? [];
         }
 
